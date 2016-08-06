@@ -10,6 +10,11 @@ namespace DungeonGenerator
     {
         static void Main(string[] args)
         {
+            //Parse args 
+
+            //call generator
+
+            //do something with result
         }
     }
 }
