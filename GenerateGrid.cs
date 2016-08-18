@@ -8,14 +8,34 @@ namespace DungeonGenerator
 {
     public class GenerateGrid
     {
-        public void Generate(int X, int Y)
+        //two dimensional grid for holding all the cells.
+        //Y axis is the first number since Y corresponds to the rows in the array (TDGrid[Y,X])
+        Cell[ , ] TDGrid;
+
+        public void Generate(int X, int Y, string Start)
         {
+
             //all the logic.
         }
 
+        public void Generate(int X, int Y, string Start, int NumRooms)
+        {
+
+            //all the logic.
+        }
+
+        // makes all the cells and stores them in an array.
         private void Grid(int X, int Y)
         {
-            // makes all the cells and stores them in an array.
+            TDGrid = new Cell[Y , X];
+            for (int i = 0; i < Y; i++)
+            {
+                for (int j = 0; j < X; j++)
+                {
+                    Cell cell = new Cell(j, i);
+                    TDGrid[i, j] = cell;
+                }
+            }
         }
 
         private void Path()
