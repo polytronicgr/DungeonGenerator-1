@@ -13,12 +13,12 @@ namespace DungeonGenerator
         public int XCoordinate { get; private set; }
         public int YCoordinate { get; private set; }
 
-        public Cell(int X, int Y)
+        public Cell(int x, int y)
         {
             IsAllocated = false;
             Status = string.Empty;
-            XCoordinate = X;
-            YCoordinate = Y;
+            XCoordinate = x;
+            YCoordinate = y;
         }
     }
 }
