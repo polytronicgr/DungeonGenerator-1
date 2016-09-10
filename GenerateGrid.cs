@@ -134,8 +134,8 @@ namespace DungeonGenerator
         {
             //creates the path the player will walk.
         }
-
-        private void Room()
+         
+        private void Room(Cell startCell)
         {
             //creates the room over the path.
         }
