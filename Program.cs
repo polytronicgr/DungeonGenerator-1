@@ -18,8 +18,7 @@ namespace DungeonGenerator
             int YValue = 0;
             string Entrance = "default";
             int NumRooms = 0;
-            const int MinGridSize = 10;
-            const int MinNumRooms = 3;
+            const int MinGridSize = 15;
 
             #region Parse args 
             foreach ( string s in args)
@@ -77,14 +76,7 @@ namespace DungeonGenerator
             #endregion
 
             GenerateGrid GridGen = new GenerateGrid();
-            if(NumRooms > MinNumRooms)
-            {
-                GridGen.Generate(XValue, YValue, Entrance, NumRooms);
-            }
-            else
-            {
-                GridGen.Generate(XValue, YValue, Entrance);
-            }
+            GridGen.Generate(XValue, YValue, Entrance, NumRooms);
             
             //do something with result
         }
